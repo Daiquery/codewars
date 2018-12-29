@@ -1,0 +1,28 @@
+function guessHatColor(a, b, c, d) {
+ if (a === "white"){
+   if (b === "white") {
+    return(2);
+   } else
+   if (b === "black"){
+     if (c === "black"){
+      return 1;
+    }
+    else {
+      return 2;
+    }
+   }
+ } else 
+   if (a === "black") {
+     if (b === "black") {
+       return(2);
+     } else
+       if (b === "white") {
+         if (c === "white") {
+           return 1;
+         }
+         else {
+           return 2;
+         }
+       }
+  }
+}
